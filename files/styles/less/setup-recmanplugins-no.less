@@ -1,0 +1,77 @@
+/* Imports */
+
+@import 'startup.less';
+
+/* Colors */
+
+@red: #E74B3B;
+@grey: #95A5A6;
+@grey-dark: #7F8C8D;
+@has-success: #29B765;
+@has-error: #F1C40F;
+
+/* General Styles */
+
+body,
+* {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+    min-height: 100% !important;
+    height: auto !important;
+}
+
+a {
+    color: @red;
+    &:hover,
+    &:focus,
+    &:active {
+        color: darken(@red, 10%);
+        cursor: pointer;
+    }
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+h4 {
+    margin-top: 30px;
+}
+
+.btn {
+    font-size: 14px;
+    margin-top: 43px;
+    padding: 14px 28px 14px;
+    text-transform: uppercase;
+    &.btn-clear {
+        border: 2px solid @red;
+        color: @red;
+        &:hover,
+        &:focus,
+        &:active {
+            background: @red;
+        }
+    }
+}
+
+.footer {
+    //border-top: 1px solid lighten(#E4E7E7, 5%);
+    padding: 50px 0 25px 0;
+    text-align: center;
+    background-color: #fff;
+    p {
+        font-size: 14px;
+        .fa {
+            &.fa-heart {
+                color: @red;
+            }
+        }
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
