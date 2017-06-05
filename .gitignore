@@ -55,7 +55,5 @@ sitemap.xml.gz*~
 ####################
 
 npm-debug.log/
-build/*
-sourcefiles/*
-work/node_modules/*
-work/gcloud.json
+node_modules/*
+gcloud.json
