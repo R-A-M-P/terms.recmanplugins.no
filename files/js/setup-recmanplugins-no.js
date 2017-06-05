@@ -64,7 +64,11 @@ $(document).ready(function() {
 
             Intercom('showNewMessage', 'Notice on Copyright Violation.\n\nYour message: ');
 
-        } else {
+        } else if ($(this).hasClass('sales-team')) {
+
+			Intercom('showNewMessage', 'Request for Custom Pricing Options\n\nYour message: ');
+
+		} else {
 
             Intercom('showNewMessage');
 
